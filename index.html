@@ -1,1 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Dylan's Portfolio</title>
+</head>
+<body>
+    <header class="color topBotomBordersIn">
+        <div class="container">
+            <a href="#home" class="logo">DYLAN</a>
+            <nav>
+                <a href="#about">ABOUT</a>
+                <a href="#portfolio">PORTFOLIO</a>
+                <a href="#contact">CONTACT</a>
+            </nav>
+        </div>
+    </header>
 
+    <section id="home">
+        <div class="container color topBotomBordersOut">
+            <div class="home-text">
+                <img src="dylan.jpg" alt="Avatar" class="avatar-image">
+            <h2>HI, I'M DYLAN</h2>
+            <h1>SOFTWARE DEVELOPER</h1>
+            <p>Welcome to my portfolio website. I am a software developer with expertise in HTML, CSS, JavaScript, and other web technologies. Check out my portfolio to see some of my work.</p>
+            <a href="#portfolio" class="button">See My Work</a>
+        </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container color topBotomBordersIn">
+            <h2>ABOUT ME</h2>
+            <p>I am a software developer with a passion for creating beautiful and functional websites. I have experience in HTML, CSS, JavaScript, and other web technologies. I am always learning and expanding my skills to stay up-to-date with the latest trends and best practices in web development.</p>
+            <h3>SKILLS</h3>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>PHP</li>
+                <li>MySQL</li>
+                <li>WordPress</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="portfolio">
+        <div class="container color topBotomBordersOut">
+            <h2>PORTFOLIO</h2>
+            <ul class="portfolio-list">
+                <li>
+                    <a href="#">
+                        <img src="image1.jpg" alt="Project 1">
+                        <h3>Project 1</h3>
+                        <p>Description of Project 1</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="image2.jpg" alt="Project 2">
+                        <h3>Project 2</h3>
+                        <p>Description of Project 2</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="image3.jpg" alt="Project 3">
+                        <h3>Project 3</h3>
+                        <p>Description of Project 3</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container color topBotomBordersIn">
+            <div class="contact-text">
+            <h2>CONTACT ME</h2>
+            <p>If you want to get in touch with me, please fill out the form below and I will get back to you as soon as possible.</p>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message"></textarea>
+
+                <input type="submit" value="Send Message">
+            </form>
+        </div>
+        </div>
+    </section>
+
+    
+    <footer class="color topBotomBordersOut">
+        <div class="container">
+            <p>Copyright © 2023 Dylan. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
