@@ -5,6 +5,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
     <title>Dylan's Portfolio</title>
+    <style>
+        /* Add media queries for responsiveness */
+        @media screen and (max-width: 768px) {
+            /* Adjust the layout for small screens */
+            .container {
+                width: 100%;
+                padding: 0 20px;
+            }
+            header {
+                padding: 10px 0;
+            }
+            nav a {
+                padding: 5px;
+            }
+            .home-text {
+                display: block;
+                text-align: center;
+            }
+            .dylan-image, .dylan-intro {
+                width: 100%;
+            }
+            .dylan-image img {
+                width: 100%;
+                height: auto;
+            }
+            .about-background {
+                font-size: 14px;
+            }
+            .table-skills {
+                width: 100%;
+                display: table;
+                table-layout: fixed;
+            }
+            .table-skills tr {
+                width: 100%;
+                display: table;
+                table-layout: fixed;
+            }
+            .table-skills td {
+                width: 25%;
+                display: table-cell;
+            }
+            .slideshow-container {
+                width: 100%;
+            }
+            .dot {
+                width: 15px;
+                height: 15px;
+                margin: 0 5px;
+                background-color: #bbb;
+                border-radius: 50%;
+                display: inline-block;
+                transition: background-color 0.6s ease;
+            }
+            .active, .dot:hover {
+                background-color: #717171;
+            }
+        }
+    </style>
 </head>
 <body>
     <header class="color topBotomBordersIn">
@@ -18,22 +77,20 @@
         </div>
     </header>
 
-    <section id="home">      
-      <div class="home-text">
-        <table>
-          <td class="dylan-image">
-            <img src="assets/dylan.png" alt="Avatar" class="avatar-image">
-          </td>
-          <td class="dylan-intro">
-            <h2>HI, I'M DYLAN</h2>
-            <h1 class="dylan-intro-uni">Rising Senior at the De La Salle Lipa University studying Bachelors of Science in Computer Science with career interest in software developer, data scientist, and data analyst.</h1>
-            <p>Welcome to my portfolio website.</p>
-            <a href="#portfolio" class="button">See My Work</a>
-          </td>
-        </table>
-     </div>
-      
-
+    <section id="home">
+        <div class="home-text">
+            <table>
+                <td class="dylan-image">
+                    <img src="dylan.jpg" alt="Avatar" class="avatar-image">
+                </td>
+                <td class="dylan-intro">
+                    <h2>HI, I'M DYLAN</h2>
+                    <h1 class="dylan-intro-uni">Rising Senior at the De La Salle Lipa University studying Bachelors of Science in Computer Science with career interest in software developer, data scientist, and data analyst.</h1>
+                    <p>Welcome to my portfolio website.</p>
+                    <a href="#portfolio" class="button">See My Work</a>
+                </td>
+            </table>
+        </div>
     </section>
 
     <section id="about">
@@ -42,62 +99,62 @@
             <p class="about-background">I am a graduating computer scientist with a passion for developing functional mobile applications, websites, and softwares. Furthermore, I am also interested being a data scientist, with experience in creating deep learning models, and using tools for data analysis. I have experience in HTML, CSS, PHP, MYSQL, C++, Flutter, Python, Tensorflow, Keras, Numpy, Matplotlib and other web technologies. I am always learning and expanding my skills in Software Development and Data Science.</p>
             <h3 class="about-skills">SKILLS</h3>
             <table class="table-skills">
-              <tr>
-                <td>
-                  <p>HTML</p>
-                </td>
-                <td>
-                  <p>CSS</p>
-                </td>
-                <td>
-                  <p>Microsoft Office</p>
-                </td>
-                <td>
-                  <p>MYSQL</p>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <p>Flutter</p>
-                </td>
-                <td>
-                  <p>C++</p>
-                </td>
-                <td>
-                  <p>Python</p>
-                </td>
-                <td>
-                  <p>PHP</p>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <p>Communication skills</p>
-                </td>
-                <td>
-                  <p>Fast Learner</p>
-                </td>
-                <td>
-                  <p>Organizational Skills</p>
-                </td>
-                <td>
-                  <p>Time Management</p>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <p>Leadership</p>
-                </td>
-                <td>
-                  <p>Team player</p>
-                </td>
-                <td>
-                  <p>Computer literate</p>
-                </td>
-                <td>
-                  <p>Innovative Thinker</p>
-                </td>
-              </tr>
+                <tr>
+                    <td>
+                        <p>HTML</p>
+                    </td>
+                    <td>
+                        <p>CSS</p>
+                    </td>
+                    <td>
+                        <p>Microsoft Office</p>
+                    </td>
+                    <td>
+                        <p>MYSQL</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Flutter</p>
+                    </td>
+                    <td>
+                        <p>C++</p>
+                    </td>
+                    <td>
+                        <p>Python</p>
+                    </td>
+                    <td>
+                        <p>PHP</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Communication skills</p>
+                    </td>
+                    <td>
+                        <p>Fast Learner</p>
+                    </td>
+                    <td>
+                        <p>Organizational Skills</p>
+                    </td>
+                    <td>
+                        <p>Time Management</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Leadership</p>
+                    </td>
+                    <td>
+                        <p>Team player</p>
+                    </td>
+                    <td>
+                        <p>Computer literate</p>
+                    </td>
+                    <td>
+                        <p>Innovative Thinker</p>
+                    </td>
+                </tr>
             </table>
         </div>
     </section>
@@ -107,175 +164,114 @@
             <h2>PORTFOLIO</h2>
             <br>
             <br>
-            
+
             <div class="slideshow-container">
 
-                    <!-- Full-width images with number and caption text -->
-                    <div class="mySlides fade">
-                      <div class="numbertext"></div>
-                      <img src="mabisatalk/loading.png" style="width:100%" class="picture">
-                
-                    </div>
-                  
-                    <div class="mySlides fade">
-                      <div class="numbertext"></div>
-                      <img src="mabisatalk/disclaimer.png" style="width:100%" class="picture">
-                
-                    </div>
-                  
-                    <div class="mySlides fade">
-                      <div class="numbertext"></div>
-                      <img src="mabisatalk/edited-singleinput.png" style="width:100%" class="picture">
-       
-                    </div>
-                    <div class="mySlides fade">
-                      <div class="numbertext"></div>
-                      <img src="mabisatalk/edited translation.png" style="width:100%" class="picture">
-                 
-                    </div>
-                  
-                    <div class="mySlides fade">
-                      <div class="numbertext"></div>
-                      <img src="mabisatalk/learning_module_page.png" style="width:100%" class="picture">
-                  
-                    </div>
-                  
-                    <div class="mySlides fade">
-                      <div class="numbertext"></div>
-                      <img src="mabisatalk/animals.png" style="width:100%" class="picture">
-        
-                    </div>
-                    <div class="mySlides fade">
-                      <div class="numbertext"></div>
-                      <img src="mabisatalk/greetings.png" style="width:100%" class="picture">
-         
-                    </div>
-                  
-                    <div class="mySlides fade">
-                      <div class="numbertext"></div>
-                      <img src="mabisatalk/necessity.png" style="width:100%" class="picture">
-              
-                    </div>
-                  
-                    <div class="mySlides fade">
-                      <div class="numbertext"></div>
-                      <img src="mabisatalk/numbers.png" style="width:100%" class="picture">
-                
-                    </div>
-                    <div class="mySlides fade">
-                      <div class="numbertext"></div>
-                      <img src="mabisatalk/verbs.png" style="width:100%" class="picture">
-             
-                    </div>
-                  
-                    <div class="mySlides fade">
-                      <div class="numbertext"></div>
-                      <img src="mabisatalk/settings_page.png" style="width:100%" class="picture">
-                    
-                    </div>
-                  
-                    <!-- Next and previous buttons -->
-                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                  </div>
-                  <br>
-                  
-                  <!-- The dots/circles -->
-                  <div style="text-align:center">
-                    <span class="dot" onclick="currentSlide(1)"></span>
-                    <span class="dot" onclick="currentSlide(2)"></span>
-                    <span class="dot" onclick="currentSlide(3)"></span>
-                  </div>
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides fade">
+                    <div class="numbertext"></div>
+                    <img src="mabisatalk/loading.png" style="width:100%" class="picture">
+
+                </div>
+
+                <!-- Add more slides here -->
+
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+
+            <br>
+
+            <!-- The dots/circles -->
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
         </div>
         <br>
         <br>
         <h3>Mabisatalk Mobile Application Offline Translation</h3>
-            <p class="Mabisatalk-explanation">MabisaTalk, a mobile app nestled in the Romblon archipelago, Philippines, tackles communication barriers for both tourists and locals. It offers a dual solution seamless translation: Navigating vibrant trails, interacting with friendly locals, and experiencing cultural immersion without language hurdles. Onhan language preservation: Dedicated learning modules and programs safeguard the endangered dialect, empowering individuals to learn and appreciate its unique beauty. Built with offline functionality and continuous improvement principles, MabisaTalk caters to two audiences: Tourists fostering smoother navigation and deeper cultural connections. Onhan language learners: Preserving the dialect and fostering cross-cultural understanding. MabisaTalk, bridge the linguistic gap, and discover the magic of Romblon, one conversation at a time.</p>
-            <br>
-            <br>
-            <br>
-            <hr width="50%">
-            <video width="320" height="240" controls>
-              <source src="iot-portfolio.mp4" type="video/mp4">
-            </video>
-            <h3>An IOT-based 3D LED art</h3>
-            <p class="IOT-explanation">Project 3D LED Art is an interactive art piece that uses 64 tiny LED lights to create colorful and ever-changing patterns. Algorithms control the lights, generating mesmerizing displays. This project takes things further by incorporating Internet of Things (IoT) technology, allowing the art to respond to external stimuli and creating an immersive experience. It showcases how technology and art can merge to create dynamic and captivating masterpieces.</p>
-            <br>
-            <br>
+        <p class="Mabisatalk-explanation">MabisaTalk, a mobile app nestled in the Romblon archipelago, Philippines, tackles communication barriers for both tourists and locals. It offers a dual solution seamless translation: Navigating vibrant trails, interacting with friendly locals, and experiencing cultural immersion without language hurdles. Onhan language preservation: Dedicated learning modules and programs safeguard the endangered dialect, empowering individuals to learn and appreciate its unique beauty. Built with offline functionality and continuous improvement principles, MabisaTalk caters to two audiences: Tourists fostering smoother navigation and deeper cultural connections. Onhan language learners: Preserving the dialect and fostering cross-cultural understanding. MabisaTalk, bridge the linguistic gap, and discover the magic of Romblon, one conversation at a time.</p>
+        <br>
+        <br>
+        <br>
+        <hr width="50%">
+        <video width="320" height="240" controls>
+            <source src="iot-portfolio.mp4" type="video/mp4">
+        </video>
+        <h3>An IOT-based 3D LED art</h3>
+        <p class="IOT-explanation">Project 3D LED Art is an interactive art piece that uses 64 tiny LED lights to create colorful and ever-changing patterns. Algorithms control the lights, generating mesmerizing displays. This project takes things further by incorporating Internet of Things (IoT) technology, allowing the art to respond to external stimuli and creating an immersive experience. It showcases how technology and art can merge to create dynamic and captivating masterpieces.</p>
+        <br>
+        <br>
     </section>
 
     <section id="contact">
         <div class="container color topBotomBordersIn">
-          <div class="contact-text">
-            <h2>CONTACT ME</h2>
-            <table class="table-contact">
-              <tr>
-                <td>
-                  <a href="https://www.facebook.com/dylan.mazing?mibextid=ZbWKwL"><img src="assets/square-facebook.svg" alt="facebook" class="fa fa-facebook"></a>
-                </td>
-                <td><p>Dylan Matocinos</p></td>
-              </tr>
-              <tr>
-                <td>
-                  <img src="assets/envelope-regular.svg" alt="gmail"  class="fa fa-gmail">
-                </td>
-                <td><p>matocinosdylan@gmail.com</p></td>
-              </tr>
-              <tr>
-                <td>
-                  <img src="assets/phone-solid.svg" alt="phone"  class="fa fa-phone">
-                </td>
-                <td><p>+639288067987</p></td>
-              </tr>
-              <tr>
-                <td>
-                  <a href="www.linkedin.com/in/dylan-thomas-matocinos-bba6ba267"><img src="assets/linkedin.svg" alt="linkedin"  class="fa fa-linkedin"></a>
-                </td>
-                <td><p>Dylan Thomas Matocinos</p></td>
-              </tr>
-            </table> 
-          </div>
+            <div class="contact-text">
+                <h2>CONTACT ME</h2>
+                <table class="table-contact">
+                    <tr>
+                        <td>
+                            <a href="https://www.facebook.com/dylan.mazing?mibextid=ZbWKwL"><img src="assets/square-facebook.svg" alt="facebook" class="fa fa-facebook"></a>
+                        </td>
+                        <td><p>Dylan Matocinos</p></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="assets/envelope-regular.svg" alt="gmail"  class="fa fa-gmail">
+                        </td>
+                        <td><p>matocinosdylan@gmail.com</p></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="assets/phone-solid.svg" alt="phone"  class="fa fa-phone">
+                        </td>
+                        <td><p>+639288067987</p></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="www.linkedin.com/in/dylan-thomas-matocinos-bba6ba267"><img src="assets/linkedin.svg" alt="linkedin"  class="fa fa-linkedin"></a>
+                        </td>
+                        <td><p>Dylan Thomas Matocinos</p></td>
+                    </tr>
+                </table>
+            </div>
         </div>
     </section>
 
-    
     <footer class="color topBotomBordersOut">
         <div class="container">
             <p>Copyright © 2023 Dylan. All rights reserved.</p>
         </div>
     </footer>
 
-
-
-
-
-
-
     <script>
         let slideIndex = 1;
         showSlides(slideIndex);
-        
+
         function plusSlides(n) {
           showSlides(slideIndex += n);
         }
-        
+
         function currentSlide(n) {
           showSlides(slideIndex = n);
         }
-        
+
         function showSlides(n) {
           let i;
           let slides = document.getElementsByClassName("mySlides");
           let dots = document.getElementsByClassName("dot");
-          if (n > slides.length) {slideIndex = 1}    
+          if (n > slides.length) {slideIndex = 1}   
           if (n < 1) {slideIndex = slides.length}
           for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";  
+            slides[i].style.display = "none"; 
           }
           for (i = 0; i < dots.length; i++) {
             dots[i].className = dots[i].className.replace(" active", "");
           }
-          slides[slideIndex-1].style.display = "block";  
+          slides[slideIndex-1].style.display = "block"; 
           dots[slideIndex-1].className += " active";
         }
     </script>
