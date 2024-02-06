@@ -4,6 +4,8 @@ body {
     padding: 0;
     color: #564e58;
     background-color: #2b3a42;
+    overflow: scroll;
+    overflow-x: hidden;
 }
 
 .container {
