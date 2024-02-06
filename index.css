@@ -1,4 +1,4 @@
-body {
+body{
     font-family: GT Walsheim;
     margin: 0;
     padding: 0;
@@ -8,23 +8,22 @@ body {
     overflow-x: hidden;
 }
 
-.container {
+.container{
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
-    
 }
 
-header {
+header{
     background-color: #fff;
-    padding: 10px ;
+    padding: 10px;
+    display: flex;
     justify-content: space-between;
     overflow: hidden;
     width: 100%;
-   
 }
 
-header a {
+header a{
     text-decoration: none;
     color: #564e58;
     margin-right: 20px;
@@ -34,20 +33,12 @@ header a {
     padding: 12px;
     line-height: 25px;
 }
+
 nav{
-float: right;
-
+    float: right;
 }
 
-.about-nav:hover{
-    background-color: #f5f7f8;
-    transition: 0.6s;
-}
-.portfolio-nav:hover{
-    background-color: #f5f7f8;
-    transition: 0.6s;
-}
-.contact-nav:hover{
+.about-nav:hover, .portfolio-nav:hover, .contact-nav:hover{
     background-color: #f5f7f8;
     transition: 0.6s;
 }
@@ -65,21 +56,20 @@ float: right;
     text-align: justify;
 }
 
-.logo {
+.logo{
     font-size: 24px;
     color: #564e58;
     font-weight: bold;
-
 }
 
-#home {
+#home{
     background-color: #233036;
     padding: 100px 0;
     text-align: center;
 }
 
 .home-text{
-    color: #f2f7f2; 
+    color: #f2f7f2;
 }
 .avatar-image{
     border-radius: 50%;
@@ -87,7 +77,7 @@ float: right;
     width: 200px;
     object-fit: cover;
 }
-.button {
+.button{
     display: inline-block;
     padding: 10px 20px;
     background-color: #f5f5f5;
@@ -102,13 +92,13 @@ float: right;
     transition: 0.6s;
 }
 
-#about {
+#about{
     background-color: #d6e0e4;
     padding: 50px 0;
     text-align: center;
 }
 
-#about ul {
+#about ul{
     list-style: none;
     padding: 0;
     display: flex;
@@ -116,7 +106,7 @@ float: right;
     flex-wrap: wrap;
 }
 
-#about ul li {
+#about ul li{
     display: inline-block;
     margin: 0 10px;
 }
@@ -124,8 +114,8 @@ float: right;
 .about-background{
     text-align: justify;
     font-size: 20px;
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
     text-indent: 50px;
     letter-spacing: 1px;
     line-height: 1.5;
@@ -138,14 +128,14 @@ float: right;
 .table-skills{
     text-align: center;
     padding: 15px;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
     width: 100%;
     font-size: 15px;
     line-height: 1.5;
 }
 
-#portfolio {
+#portfolio{
     background-color: #b3c5cd;
     padding: 50px 0;
     text-align: center;
@@ -161,8 +151,8 @@ float: right;
 .Mabisatalk-explanation{
     text-align: justify;
     text-indent: 15px;
-    margin-left: 150px;
-    margin-right: 150px;
+    margin-left: 50px;
+    margin-right: 50px;
     font-size: 15px;
     line-height: 1.5;
 }
@@ -170,13 +160,13 @@ float: right;
 .IOT-explanation{
     text-align: justify;
     text-indent: 15px;
-    margin-left: 150px;
-    margin-right: 150px;
+    margin-left: 50px;
+    margin-right: 50px;
     font-size: 15px;
     line-height: 1.5;
 }
 
-.portfolio-list {
+.portfolio-list{
     list-style: none;
     padding: 0;
     display: grid;
@@ -184,28 +174,28 @@ float: right;
     gap: 20px;
 }
 
-.portfolio-list li {
+.portfolio-list li{
     margin-bottom: 20px;
 }
 
 .picture{
     height: 500px;
-    width: 100;
+    width: 100%;
     object-fit: contain;
 }
-.slideshow-container {
+.slideshow-container{
     max-width: 1000px;
     position: relative;
     margin: auto;
-  }
-  
-  /* Hide the images by default */
-  .mySlides {
+}
+
+/* Hide the images by default*/
+.mySlides{
     display: none;
-  }
-  
-  /* Next & previous buttons */
-  .prev, .next {
+}
+
+/* Next & previous buttons*/
+.prev, .next{
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -218,25 +208,26 @@ float: right;
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
-  }
-  
-  /* Position the "next button" to the right */
-  .next {
+}
+
+/* Position the "next button" to the right*/
+.next{
     right: 0;
     border-radius: 3px 0 0 3px;
-  }
-  .prev {
+}
+
+.prev{
     left: 0;
     border-radius: 3px 0 0 3px;
-  }
-  
-  /* On hover, add a black background color with a little bit see-through */
-  .prev:hover, .next:hover {
+}
+
+/* On hover, add a black background color with a little bit see-through*/
+.prev:hover, .next:hover{
     background-color: rgba(0,0,0,0.8);
-  }
-  
-  /* Caption text */
-  .text {
+}
+
+/* Caption text*/
+.text{
     color: #f2f2f2;
     font-size: 15px;
     padding: 8px 12px;
@@ -244,19 +235,19 @@ float: right;
     bottom: 8px;
     width: 100%;
     text-align: center;
-  }
-  
-  /* Number text (1/3 etc) */
-  .numbertext {
+}
+
+/* Number text (1/3 etc)*/
+.numbertext{
     color: #f2f2f2;
     font-size: 12px;
     padding: 8px 12px;
     position: absolute;
     top: 0;
-  }
-  
-  /* The dots/bullets/indicators */
-  .dot {
+}
+
+/* The dots/bullets/indicators*/
+.dot{
     cursor: pointer;
     height: 15px;
     width: 15px;
@@ -265,34 +256,34 @@ float: right;
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
-  }
-  
-  .active, .dot:hover {
+}
+
+.active, .dot:hover{
     background-color: #717171;
-  }
-  
-  /* Fading animation */
-  .fade {
+}
+
+/* Fading animation*/
+.fade{
     animation-name: fade;
     animation-duration: 1.5s;
-  }
-  
-  @keyframes fade {
+}
+
+@keyframes fade{
     from {opacity: .4}
     to {opacity: 1}
-  }
+}
 
-.portfolio-list a {
+.portfolio-list a{
     text-decoration: none;
     color: #fafbfc;
 }
 
-.portfolio-list img {
+.portfolio-list img{
     max-width: 100%;
     border-radius: 5px;
 }
 
-#contact {
+#contact{
     background-color: #1c252a;
     padding: 50px 0;
     text-align: center;
@@ -304,12 +295,12 @@ float: right;
 
 .table-contact{
     padding-top: 20px;
-    margin-left: 450px;
-    margin-right: 450px;
+    margin-left: 20px;
+    margin-right: 20px;
     text-align: left;
 }
 
-.fa {
+.fa{
     padding: 20px;
     font-size: 30px;
     width: 15px;
@@ -317,45 +308,89 @@ float: right;
     text-align: center;
     text-decoration: none;
     margin: 4px 2px;
-    border-radius: 50px;
-  }
-  
-  /* Add a hover effect if you want */
-  .fa:hover {
-    opacity: 0.7;
-  }
-  
-  /* Set a specific color for each brand */
-  
-  /* Facebook */
-  .fa-facebook {
-    background: #3B5998;
-    color: white;
-  }
-  
-  /* Linkedin */
-  .fa-linkedin {
-    background: #007bb5;
-    color: white;
-  }
-  
-  .fa-gmail{
-    background: #007bb5;
-    color: white;
-  }
-  .fa-phone {
-    background: #3B5998;
-    color: white;
-  }
+    border-radius: 50%;
+}
 
-footer {
+/* Add a hover effect if you want*/
+.fa:hover{
+    opacity: 0.7;
+}
+
+/* Set a specific color for each brand*/
+
+/* Facebook*/
+.fa-facebook{
+    background: #3B5998;
+    color: white;
+}
+
+/* Linkedin*/
+.fa-linkedin{
+    background: #007bb5;
+    color: white;
+}
+
+.fa-gmail{
+    background: #007bb5;
+    color: white;
+}
+
+.fa-phone{
+    background: #3B5998;
+    color: white;
+}
+
+footer{
     background-color: #fff;
     padding: 20px 0;
     text-align: center;
     font-weight: bold;
 }
 
-footer p {
+footer p{
     margin: 0;
     color: #564e58;
+}
+
+/* Media queries for responsiveness*/
+@media screen and (max-width: 768px) {
+    header,
+    #home,
+    #about,
+    #portfolio,
+    #contact {
+        padding: 20px 0;
+    }
+
+    .dylan-image,
+    .dylan-intro {
+        width: 100%;
+    }
+
+    .avatar-image {
+        height: 150px;
+        width: 150px;
+    }
+
+    .table-skills {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .portfolio-list {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    .picture {
+        height: 200px;
+    }
+
+    .contact-text {
+        padding-top: 10px;
+    }
+
+    .table-contact {
+        margin-left: 0;
+        margin-right: 0;
+    }
 }
