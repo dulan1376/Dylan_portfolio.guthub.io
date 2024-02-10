@@ -352,45 +352,49 @@ footer p{
     color: #564e58;
 }
 
-/* Media queries for responsiveness*/
 @media screen and (max-width: 768px) {
-    header,
-    #home,
-    #about,
-    #portfolio,
-    #contact {
-        padding: 20px 0;
+    header {
+        padding: 10px 0;
     }
 
-    .dylan-image,
-    .dylan-intro {
+    .logo {
+        margin-left: 10px; /* Adjust as needed */
+    }
+
+    .container {
+        padding: 0 10px;
+    }
+
+    .dylan-image, .dylan-intro {
         width: 100%;
+        padding: 0 20px; /* Adjust padding as needed */
     }
 
     .avatar-image {
-        height: 150px;
-        width: 150px;
+        height: auto;
+        width: 100%;
     }
 
-    .table-skills {
+    .about-background, .IOT-explanation, .Mabisatalk-explanation {
+        margin: 0 10px;
+    }
+
+    .table-skills, .table-contact {
         margin-left: 0;
         margin-right: 0;
     }
 
     .portfolio-list {
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 10px; /* Adjust gap as needed */
     }
 
     .picture {
-        height: 200px;
+        height: auto;
+        max-width: 100%;
     }
 
-    .contact-text {
-        padding-top: 10px;
-    }
-
-    .table-contact {
-        margin-left: 0;
-        margin-right: 0;
+    footer {
+        padding: 10px 0;
     }
 }
